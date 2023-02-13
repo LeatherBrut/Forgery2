@@ -1,0 +1,4 @@
+cmake_minimum_required(3.25 REQUIRED)
+project(Forgery2)
+#something with dependencies
+add_subdirectory(src)
