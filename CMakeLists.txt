@@ -24,13 +24,17 @@ add_library(DearImgui STATIC
 
     ${CMAKE_CURRENT_SOURCE_DIR}/deps/DearImgui/imgui_impl_glfw.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/deps/DearImgui/imgui_impl_opengl2.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/deps/DearImgui/imconfig.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/deps/DearImgui/imgui.h
     ${CMAKE_CURRENT_SOURCE_DIR}/deps/DearImgui/imgui.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/deps/DearImgui/imgui_draw.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/deps/DearImgui/imgui_demo.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/deps/DearImgui/imgui_internal.h
     ${CMAKE_CURRENT_SOURCE_DIR}/deps/DearImgui/imgui_tables.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/deps/DearImgui/imgui_widgets.cpp
-
+    ${CMAKE_CURRENT_SOURCE_DIR}/deps/DearImgui/imstb_textedit.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/deps/DearImgui/imstb_truetype.h
 )
 
 add_subdirectory(src)
-target_link_libraries(${PROJECT_NAME} glfw DearImgui )
+target_link_libraries(${PROJECT_NAME} glfw DearImgui)
