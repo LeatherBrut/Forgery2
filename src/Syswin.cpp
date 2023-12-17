@@ -1,5 +1,5 @@
-#include <GLFW/glfw3.h>
 
+#include <GLFW/glfw3.h>
 
 int main(int,char**){
   
@@ -13,7 +13,12 @@ int main(int,char**){
     glfwTerminate()
     return -1;
   }
+  glfwMakeContextCurrent(winmaker);
   
-  
-    return 0;  
+  while(!glfwWindowShouldClose(winmaker)){
+    glfwPollevent();
+    glfwSwapBuffer(winmaker);
+  }
+  glfwTerminate();
+  return 0;
 }
